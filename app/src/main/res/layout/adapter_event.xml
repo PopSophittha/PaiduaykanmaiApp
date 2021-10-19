@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/event_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="IssueCommentEvent (18481050100)" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/actor_avatar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp" />
+
+            <TextView
+                android:layout_toEndOf="@id/actor_avatar"
+                android:id="@+id/actor_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="10dp"
+                android:text="41898282" />
+
+            <TextView
+                android:layout_toEndOf="@id/actor_id"
+                android:id="@+id/actor_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="github-actions[bot]" />
+
+            <TextView
+                android:layout_toEndOf="@id/actor_avatar"
+                android:layout_below="@id/actor_id"
+                android:id="@+id/actor_display_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="10dp"
+                android:text="github-actions" />
+
+            <TextView
+                android:layout_below="@id/actor_login"
+                android:layout_toEndOf="@id/actor_display_login"
+                android:id="@+id/actor_gravatar_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="" />
+
+            <TextView
+                android:layout_below="@id/actor_display_login"
+                android:id="@+id/actor_url"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:autoLink="web"
+                android:linksClickable="true"
+                android:text="https://api.github.com/users/github-actions[bot]" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/repo_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="repository id: (382271302)" />
+
+        <TextView
+            android:id="@+id/repo_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="woowacourse-teams/2021-jujeol-jujeol" />
+
+         <TextView
+            android:id="@+id/repo_url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:autoLink="web"
+            android:linksClickable="true"
+            android:text="https://api.github.com/users/github-actions[bot]" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/black" />
+</LinearLayout>
